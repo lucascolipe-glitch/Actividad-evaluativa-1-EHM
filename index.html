@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cápsula interactiva sobre epistemología, historia de la ciencia y sesgos en la historia de la matemática.">
+  <title>¿Quién cuenta la matemática?</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<header class="barra" aria-label="Navegación principal">
+  <a class="marca" href="#" data-ir="inicio">Epistemología e Historia de la Matemática</a>
+  <nav aria-label="Secciones de la cápsula">
+    <button type="button" data-ir="mapa">Mapa</button>
+    <button type="button" data-ir="actividad">Actividad</button>
+    <button type="button" data-ir="fuentes">Fuentes</button>
+  </nav>
+</header>
+<main id="contenido">
+  <!-- PORTADA -->
+  <section id="inicio" class="pantalla activa hero" aria-labelledby="titulo-principal">
+    <div class="hero-texto">
+      <p class="ceja">Cápsula de aprendizaje · Profesorado en Matemática · UNCo</p>
+      <h1 id="titulo-principal">¿Quién cuenta la matemática?</h1>
+      <p class="bajada">Epistemología, relatos de ciencia y sesgos para revisar aquello que aprendimos a llamar “historia de la matemática”.</p>
+      <p>El recorrido tiene cuatro entradas, pero tres estaciones obligatorias: pensar la ciencia, discutir el mito de los grandes hombres y repensar una historia matemática no eurocéntrica.</p>
+      <div class="acciones"><button class="primario" type="button" data-ir="mapa">Comenzar</button><button class="secundario" type="button" data-ir="proposito">Conocer el propósito</button></div>
+      <div class="progreso" aria-live="polite"><span>Etapas obligatorias visitadas:</span><strong id="contador-progreso">0 de 3</strong></div>
+    </div>
+    <figure><img src="assets/img/hero-red-conocimiento.svg" alt="Red abierta que conecta ciencia, métodos, historias, culturas, matemática y aulas."><figcaption>Decisión de diseño: la red reemplaza la imagen lineal de una sucesión de descubrimientos.</figcaption></figure>
+  </section>
+
+  <!-- PROPÓSITO -->
+  <section id="proposito" class="pantalla" aria-labelledby="titulo-proposito">
+    <div class="encabezado-seccion"><p class="ceja">Antes de explorar</p><h2 id="titulo-proposito">Un recorrido para desnaturalizar relatos</h2></div>
+    <div class="dos-columnas"><div><p>La cápsula acompaña la Actividad Evaluativa 1. No resume los textos para reemplazar su lectura: ofrece preguntas, contrastes y estrategias para leerlos y producir los escritos solicitados.</p><h3>Al finalizar, se espera que puedas</h3><ul class="lista-check"><li>distinguir problemas epistemológicos vinculados con ciencia, conocimiento, método y verdad;</li><li>reconocer la ciencia como práctica colectiva, histórica y situada;</li><li>identificar sesgos historiográficos y analizar qué producen;</li><li>elaborar una reflexión argumentada para cada producto de la actividad.</li></ul></div><blockquote>¿Qué cambia cuando dejamos de preguntar solamente “quién descubrió” y comenzamos a preguntar “en qué condiciones, con qué saberes y mediante qué relatos se construyó”?</blockquote></div>
+    <div class="acciones"><button class="primario" type="button" data-ir="mapa">Ir al mapa</button><button class="secundario" type="button" data-ir="inicio">Volver a la portada</button></div>
+  </section>
+
+  <!-- MAPA -->
+  <section id="mapa" class="pantalla" aria-labelledby="titulo-mapa">
+    <div class="encabezado-seccion"><p class="ceja">Navegación no lineal</p><h2 id="titulo-mapa">Elegí una entrada</h2><p>Podés comenzar por cualquier nodo. Para completar la actividad, visitá los nodos 1, 2 y 3. El nodo 4 ayuda a relacionarlos y preparar la escritura.</p></div>
+    <div class="mapa-grid">
+      <button class="nodo" type="button" data-ir="nodo1"><span class="numero">01</span><span class="icono" aria-hidden="true">⌁</span><strong>¿Qué llamamos ciencia?</strong><small>¿Qué la distingue y cómo se valida?</small><span class="estado" data-estado="nodo1">Pendiente</span></button>
+      <button class="nodo" type="button" data-ir="nodo2"><span class="numero">02</span><span class="icono" aria-hidden="true">👥</span><strong>Más allá del gran hombre</strong><small>¿Qué oculta el relato del genio aislado?</small><span class="estado" data-estado="nodo2">Pendiente</span></button>
+      <button class="nodo" type="button" data-ir="nodo3"><span class="numero">03</span><span class="icono" aria-hidden="true">◎</span><strong>¿Qué historia se volvió oficial?</strong><small>¿Quiénes y qué saberes quedaron fuera?</small><span class="estado" data-estado="nodo3">Pendiente</span></button>
+      <button class="nodo nodo-transversal" type="button" data-ir="nodo4"><span class="numero">04</span><span class="icono" aria-hidden="true">✍</span><strong>Del análisis a la autoría</strong><small>¿Cómo construir una posición argumentada?</small><span class="estado" data-estado="nodo4">Optativo</span></button>
+    </div>
+    <aside class="aviso"><strong>Recorrido sugerido, no obligatorio:</strong> si necesitás acompañar el orden de la consigna, seguí 1 → 2 → 3 → 4.</aside>
+  </section>
+
+  <!-- NODO 1 -->
+  <section id="nodo1" class="pantalla nodo-seccion" data-obligatorio="true" aria-labelledby="titulo-nodo1">
+    <div class="encabezado-seccion"><p class="ceja">Nodo 1 · Sección 1 de la actividad</p><h2 id="titulo-nodo1">¿Qué llamamos ciencia?</h2><p class="pregunta">¿La ciencia se define por sus resultados, por sus métodos, por su organización o por el modo en que justifica sus afirmaciones?</p></div>
+    <div class="tarjetas-lectura"><article><h3>Problema epistemológico</h3><p>La epistemología estudia la investigación científica, sus productos y las condiciones de producción y validación del conocimiento. La consigna invita a diferenciarla de la filosofía general, la gnoseología y la metodología.</p></article><article><h3>Tensión central</h3><p>Los materiales cuestionan una imagen única y cerrada: hablar de <em>el</em> método científico puede ocultar la pluralidad de procedimientos, disciplinas y transformaciones históricas.</p></article><article><h3>En matemática</h3><p>Boido usa la relación entre realidad, verdad y lógica para mostrar que la aparición de geometrías no euclidianas obliga a revisar supuestos que parecían evidentes.</p></article></div>
+    <div class="recurso-grid"><article class="recurso"><span class="etiqueta">Audio + texto</span><h3>Escucha orientada</h3><audio controls preload="metadata"><source src="assets/audio/nodo1-epistemologia.mp3" type="audio/mpeg">Tu navegador no puede reproducir el audio.</audio><p class="nota-media">Colocá en <code>assets/audio/nodo1-epistemologia.mp3</code> una lectura o explicación breve. Mientras tanto, el guion accesible funciona como alternativa.</p><details><summary>Leer el guion sugerido</summary><p>La pregunta epistemológica no busca una definición final. Interroga cómo se construyen, justifican, comunican y revisan las afirmaciones científicas. En la formación docente, esta reflexión permite decidir qué imagen de ciencia se transmite en el aula.</p></details></article><article class="estrategia"><h3>Estrategia de lectura: matriz de contraste</h3><div class="tabla-scroll"><table><thead><tr><th>Pregunta</th><th>Díaz y Heler</th><th>Bunge</th><th>Klimovsky / Boido</th></tr></thead><tbody><tr><th>¿Qué se considera ciencia?</th><td contenteditable="true" aria-label="Notas sobre Díaz y Heler"></td><td contenteditable="true" aria-label="Notas sobre Bunge"></td><td contenteditable="true" aria-label="Notas sobre Klimovsky y Boido"></td></tr><tr><th>¿Cómo se valida?</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr><tr><th>¿Qué problema deja abierto?</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr></tbody></table></div><p class="microconsigna">No busques que todos digan lo mismo: registrá diferencias, énfasis y preguntas.</p></article></div>
+    <div class="video-bloque"><div><span class="etiqueta">Video de apoyo</span><h3>Concepción heredada y concepción crítica</h3><p>Miralo para identificar qué supuestos cambian cuando la ciencia deja de presentarse como neutral, acumulativa y separada de su contexto.</p><a class="enlace" href="https://youtu.be/GzrmOLSza0Q" target="_blank" rel="noopener">Abrir video en YouTube</a></div><div class="video-responsive"><iframe src="https://www.youtube-nocookie.com/embed/GzrmOLSza0Q" title="Concepción heredada y concepción crítica según Esther Díaz" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+    <aside class="producto"><strong>Producto de esta etapa:</strong> elegí tres consignas de la sección 1 y elaborá desarrollos breves apoyados en las lecturas.</aside>
+    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="nodo2">Continuar a la etapa 2</button></div>
+  </section>
+
+  <!-- NODO 2 -->
+  <section id="nodo2" class="pantalla nodo-seccion" data-obligatorio="true" aria-labelledby="titulo-nodo2">
+    <div class="encabezado-seccion"><p class="ceja">Nodo 2 · Sección 2 de la actividad</p><h2 id="titulo-nodo2">Más allá del “gran hombre”</h2><p class="pregunta">¿Qué desaparece cuando la historia de la ciencia se cuenta como una cadena de genialidades individuales?</p></div>
+    <div class="cita-comentada"><blockquote>“Ningún gran hombre se basta a sí mismo en ningún terreno cultural, y mucho menos en la ciencia.”</blockquote><p><strong>Cita textual de J. D. Bernal</strong>, reproducida en la consigna. La lectura propone desplazar la mirada desde el individuo aislado hacia condiciones sociales, instituciones, trabajos previos y cooperación.</p></div>
+    <div class="video-bloque"><div><span class="etiqueta">Video + análisis</span><h3>El mito en la historia y en el presente</h3><ol><li>Anotá qué rasgos construyen la figura del héroe.</li><li>Identificá qué actores colectivos quedan en segundo plano.</li><li>Relacioná un ejemplo con tu propia trayectoria escolar.</li></ol><a class="enlace" href="https://youtu.be/vltMqE4LNIs" target="_blank" rel="noopener">Abrir video en YouTube</a></div><div class="video-responsive"><iframe src="https://www.youtube-nocookie.com/embed/vltMqE4LNIs" title="Video sobre el mito de los grandes hombres" loading="lazy" allowfullscreen></iframe></div></div>
+    <div class="comparador"><h3>Reencuadrar una narración</h3><div class="comparador-grid"><article><h4>Relato heroico</h4><p>“Una persona excepcional descubre una verdad gracias a su genialidad.”</p></article><div class="flecha" aria-hidden="true">→</div><article><h4>Relato situado</h4><p>Preguntá por problemas disponibles, saberes previos, colaboradores, instituciones, instrumentos, conflictos y condiciones materiales.</p></article></div><label for="reescritura">Reescribí un episodio matemático que recuerdes de la escuela:</label><textarea id="reescritura" rows="5" placeholder="De la biografía individual a una trama histórica y colectiva..."></textarea></div>
+    <aside class="producto"><strong>Producto de esta etapa:</strong> llevar a la discusión colectiva cómo apareció este mito en la propia formación y por qué conviene problematizarlo.</aside>
+    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="nodo3">Continuar a la etapa 3</button></div>
+  </section>
+
+  <!-- NODO 3 -->
+  <section id="nodo3" class="pantalla nodo-seccion" data-obligatorio="true" aria-labelledby="titulo-nodo3">
+    <div class="encabezado-seccion"><p class="ceja">Nodo 3 · Sección 3 de la actividad</p><h2 id="titulo-nodo3">¿Qué historia se volvió oficial?</h2><p class="pregunta">¿Qué se reconoce como matemática y qué trayectorias desaparecen cuando Europa se presenta como origen y centro?</p></div>
+    <figure class="imagen-ancha"><img src="assets/img/sesgos-lente.svg" alt="Cinco lentes muestran sesgos que modifican qué aspectos de la historia matemática se vuelven visibles."><figcaption>Esquema conceptual elaborado a partir de los sesgos enumerados en la consigna.</figcaption></figure>
+    <div class="esquema"><h3>Tres movimientos para leer críticamente</h3><div class="pasos"><article><span>1</span><h4>Detectar</h4><p>¿Qué centro, sujeto universal o idea de progreso organiza el relato?</p></article><article><span>2</span><h4>Rastrear efectos</h4><p>¿Qué culturas, prácticas, lenguajes o formas de transmisión quedan subordinadas?</p></article><article><span>3</span><h4>Reformular</h4><p>¿Qué fuentes y categorías permitirían narrar una historia plural y situada?</p></article></div></div>
+    <div class="autores-grid"><article><h3>G. G. Joseph</h3><p>Contrasta trayectorias eurocéntricas y alternativas. Propone pensar desarrollos independientes y múltiples circulaciones del conocimiento matemático entre culturas.</p></article><article><h3>U. D’Ambrosio</h3><p>La etnomatemática reconoce la generación, organización y transmisión cultural de saberes como contar, medir, clasificar y ordenar; cuestiona una historiografía reduccionista.</p></article><article><h3>J. Høyrup</h3><p>Invita a releer los textos babilónicos sin traducirlos automáticamente a categorías aritméticas modernas, atendiendo a sus propias técnicas y significados.</p></article></div>
+    <div class="video-bloque"><div><span class="etiqueta">Video + comparación</span><h3>Eurocentrismo en la historiografía matemática</h3><p>Después de mirar, elegí una afirmación y contrastala con Joseph o D’Ambrosio. La función del video es abrir ejemplos; la lectura sostiene la argumentación.</p><a class="enlace" href="https://youtu.be/7KGP86Dx1Eo" target="_blank" rel="noopener">Abrir video en YouTube</a></div><div class="video-responsive"><iframe src="https://www.youtube-nocookie.com/embed/7KGP86Dx1Eo" title="Eurocentrismo en la historiografía de la matemática" loading="lazy" allowfullscreen></iframe></div></div>
+    <aside class="producto"><strong>Producto de esta etapa:</strong> un texto de hasta una página, centrado en uno o más sesgos, con una reflexión personal argumentada a partir de las lecturas.</aside>
+    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="nodo4">Preparar la escritura</button></div>
+  </section>
+
+  <!-- NODO 4 -->
+  <section id="nodo4" class="pantalla nodo-seccion" aria-labelledby="titulo-nodo4">
+    <div class="encabezado-seccion"><p class="ceja">Nodo 4 · Integración transversal</p><h2 id="titulo-nodo4">Del análisis a la autoría</h2><p class="pregunta">¿Cómo pasar de una opinión general a una reflexión argumentada?</p></div>
+    <div class="constructor"><h3>Constructor de argumento</h3><div class="argumento-grid"><label>1. Problema o sesgo<textarea id="arg-problema" rows="3" placeholder="Por ejemplo: el eurocentrismo..."></textarea></label><label>2. Idea de una lectura<textarea id="arg-lectura" rows="3" placeholder="Joseph, D’Ambrosio, Høyrup, Bernal..."></textarea></label><label>3. Evidencia o ejemplo<textarea id="arg-ejemplo" rows="3" placeholder="Un texto escolar, una narración, una práctica..."></textarea></label><label>4. Implicancia docente<textarea id="arg-docencia" rows="3" placeholder="¿Qué cambiaría en una clase de matemática?"></textarea></label></div><button id="armar-borrador" class="primario" type="button">Armar borrador</button><div id="borrador" class="salida" aria-live="polite">Completá los cuatro campos para visualizar una primera trama argumental.</div></div>
+    <div class="criterios"><h3>Revisión antes de entregar</h3><label><input type="checkbox"> Distingo mis palabras de las citas textuales.</label><label><input type="checkbox"> No uso el recurso multimedia como sustituto de la lectura.</label><label><input type="checkbox"> Explico cómo opera el sesgo, no solo lo nombro.</label><label><input type="checkbox"> Incluyo una consecuencia epistemológica o educativa.</label></div>
+    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="actividad">Resolver la actividad interactiva</button></div>
+  </section>
+
+  <!-- ACTIVIDAD -->
+  <section id="actividad" class="pantalla" aria-labelledby="titulo-actividad">
+    <div class="encabezado-seccion"><p class="ceja">Actividad interactiva</p><h2 id="titulo-actividad">Cambiar la pregunta cambia la historia</h2><p>Resolvé tres casos. La devolución explica qué problema epistemológico o historiográfico está en juego.</p></div>
+    <div id="caso-contenedor" class="caso" aria-live="polite"></div>
+    <div class="acciones"><button id="reiniciar-actividad" class="secundario" type="button">Reiniciar casos</button><button class="primario" type="button" data-ir="bitacora">Ir a la bitácora</button></div>
+  </section>
+
+  <!-- BITÁCORA -->
+  <section id="bitacora" class="pantalla" aria-labelledby="titulo-bitacora">
+    <div class="encabezado-seccion"><p class="ceja">Bitácora personal</p><h2 id="titulo-bitacora">Una pregunta que me llevo</h2><p>Estas notas se guardan solamente en este navegador y en este dispositivo.</p></div>
+    <label for="nota-bitacora">¿Qué idea de ciencia o de historia matemática empezaste a revisar?</label><textarea id="nota-bitacora" rows="8" placeholder="Escribí una reflexión, una duda o una posible relación con tu futura práctica docente..."></textarea>
+    <p id="estado-guardado" role="status"></p>
+    <div class="acciones"><button id="guardar-bitacora" class="primario" type="button">Guardar en este dispositivo</button><button id="borrar-bitacora" class="secundario" type="button">Borrar bitácora</button><button class="secundario" type="button" data-ir="pausa">Pausa reflexiva</button></div>
+  </section>
+
+  <!-- PAUSA MUSICAL -->
+  <section id="pausa" class="pantalla" aria-labelledby="titulo-pausa">
+    <div class="encabezado-seccion"><p class="ceja">Pausa musical</p><h2 id="titulo-pausa">Escuchar también es cambiar el ritmo</h2></div>
+    <div class="pausa-card"><audio controls preload="metadata"><source src="assets/audio/pausa-reflexiva.mp3" type="audio/mpeg">Tu navegador no puede reproducir el audio.</audio><p class="nota-media">Colocá una pieza autorizada en <code>assets/audio/pausa-reflexiva.mp3</code>. Esta elección queda abierta porque los materiales no definen una obra musical específica.</p><blockquote id="pregunta-pausa">¿Qué nombres aparecen primero cuando pensás en la historia de la matemática?</blockquote><button id="otra-pregunta" class="primario" type="button">Otra pregunta</button></div>
+    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="fuentes">Consultar fuentes</button></div>
+  </section>
+
+  <!-- FUENTES -->
+  <section id="fuentes" class="pantalla" aria-labelledby="titulo-fuentes">
+    <div class="encabezado-seccion"><p class="ceja">Bibliografía y créditos</p><h2 id="titulo-fuentes">Materiales que sostienen la cápsula</h2></div>
+    <div class="fuentes-grid"><article><h3>Sección 1</h3><ul><li>Díaz, E. y Heler, M. (1992). “¿Qué es la ciencia?” y “El conocimiento científico”.</li><li>Bunge, M. (1995). “¿Cuál es el método de la ciencia?”.</li><li>Boido, G. (2007). “Realidad, verdad y lógica en matemática”.</li><li>Klimovsky, G. (1994). “El concepto de ciencia”.</li></ul></article><article><h3>Secciones 2 y 3</h3><ul><li>Bernal, J. D. Fragmento “Función de los grandes hombres”, en <em>Historia social de la ciencia</em>.</li><li>Høyrup, J. (2017). <em>Algebra in Cuneiform</em>.</li><li>Joseph, G. G. (1996). <em>La cresta del pavo real</em>, capítulo 1.</li><li>D’Ambrosio, U. (2000). “A historiographical proposal for non-western mathematics”.</li></ul></article></div>
+    <div class="creditos"><h3>Autoría y uso de inteligencia artificial</h3><p><strong>Propuesta docente y selección de materiales:</strong> Lucas Colipe, Universidad Nacional del Comahue.</p><p><strong>Asistencia de IAG:</strong> se utilizó inteligencia artificial generativa para organizar la arquitectura de navegación, redactar borradores de microcontenidos y programar HTML, CSS y JavaScript. La selección conceptual, la pertinencia didáctica y la revisión final corresponden al autor docente. La cápsula no atribuye a la IAG la autoría de los textos fuente ni reemplaza su lectura.</p><p class="nota">Las síntesis de esta cápsula son paráfrasis. La única cita textual destacada es la de Bernal, ya reproducida en la consigna de la actividad.</p></div>
+    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="inicio">Volver al inicio</button></div>
+  </section>
+</main>
+<footer><p>Cápsula educativa · Epistemología e Historia de la Matemática · UNCo</p></footer>
+<noscript><p class="noscript">Esta cápsula necesita JavaScript para la navegación y la actividad interactiva.</p></noscript>
+<script src="js/app.js"></script>
+</body>
+</html>
