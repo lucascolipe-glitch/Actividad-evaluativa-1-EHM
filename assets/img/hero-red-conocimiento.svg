@@ -4,8 +4,7 @@
 <rect width="800" height="620" rx="42" fill="#eef5ff"/>
 <g stroke="#2f6fed" stroke-width="5" opacity=".95">
   <path d="M140 155L365 100 650 180 560 390 320 500 110 390Z"/>
-  <path d="M140 155L320 500M365 100L560 390 />
-  <path d="M650 180L110 390M140 155L560 390"/>
+  <path d="M140 155L320 500M365 100L560 390 M650 180L110 390M140 155L560 390"/>
   <path d="M100 390 L365 100"/> 
 </g>
 <g fill="#fff" stroke="#163d86" stroke-width="4">
