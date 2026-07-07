@@ -2,8 +2,19 @@
 <title id="title">Red de conocimientos matemáticos</title><desc id="desc">Personas, textos, símbolos y culturas conectados en una red abierta.</desc>
 <rect width="800" height="620" rx="42" fill="#eef5ff"/>
 <g stroke="#2f6fed" stroke-width="5" opacity=".55"><path d="M140 155L365 100 650 180 560 390 320 500 110 390Z"/><path d="M140 155L320 500M365 100L560 390M650 180L110 390M140 155L560 390"/></g>
-<g fill="#fff" stroke="#163d86" stroke-width="4"><circle cx="140" cy="155" r="55"/><circle cx="365" cy="100" r="62"/><circle cx="650" cy="180" r="55"/><circle cx="560" cy="390" r="62"/><circle cx="320" cy="500" r="58"/><circle cx="110" cy="390" r="50"/></g>
-<g fill="#163d86" font-family="Arial,sans-serif" font-size="25" text-anchor="middle"><text x="140" y="163">métodos</text><text x="365" y="94">ciencia</text><text x="365" y="124">situada</text><text x="650" y="188">historias</text><text x="560" y="385">culturas</text><text x="560" y="415">y saberes</text><text x="320" y="495">matemática</text><text x="320" y="525">plural</text><text x="110" y="398">aulas</text></g>
+<g fill="#fff" stroke="#163d86" stroke-width="4">
+  <circle cx="140" cy="155" r="55"/>
+  <circle cx="365" cy="100" r="62"/>
+  <circle cx="650" cy="180" r="55"/>
+  <circle cx="560" cy="390" r="62"/>
+  <circle cx="320" cy="500" r="62"/>
+  <circle cx="110" cy="390" r="50"/></g>
+<g fill="#163d86" font-family="Arial,sans-serif" font-size="25" text-anchor="middle"><text x="140" y="163">métodos</text><text x="365" y="94">ciencia</text><text x="365" y="124">situada</text><text x="650" y="188">historias</text>
+  <text x="560" y="385">culturas</text>
+  <text x="560" y="415">y saberes</text>
+  <text x="320" y="495">matemática</text>
+  <text x="320" y="525">plural</text>
+  <text x="110" y="398">aulas</text></g>
 <path d="M365 188c-55 0-100 45-100 100s45 100 100 100 100-45 100-100-45-100-100-100Z" fill="#ffd166" stroke="#163d86" stroke-width="5"/>
 <text x="365" y="274" fill="#163d86" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">¿quiénes</text><text x="365" y="309" fill="#163d86" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">construyen</text><text x="365" y="344" fill="#163d86" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">el saber?</text>
 </svg>
