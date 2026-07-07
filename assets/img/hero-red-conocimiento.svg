@@ -7,7 +7,7 @@
   <circle cx="365" cy="100" r="62"/>
   <circle cx="650" cy="180" r="55"/>
   <circle cx="560" cy="390" r="62"/>
-  <circle cx="320" cy="500" r="62"/>
+  <circle cx="320" cy="500" r="66"/>
   <circle cx="110" cy="390" r="50"/></g>
 <g fill="#163d86" font-family="Arial,sans-serif" font-size="25" text-anchor="middle"><text x="140" y="163">métodos</text><text x="365" y="94">ciencia</text><text x="365" y="124">situada</text><text x="650" y="188">historias</text>
   <text x="560" y="385">culturas</text>
