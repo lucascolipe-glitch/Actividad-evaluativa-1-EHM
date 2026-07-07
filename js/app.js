@@ -149,7 +149,7 @@
   const preguntas = [
     '¿Qué nombres aparecen primero cuando pensás en la historia de la matemática?',
     '¿Qué prácticas matemáticas conocés cuyo autor no podría reducirse a una sola persona?',
-    '¿Qué cambia cuando una fuente se lee desde sus propias categorías?',
+    '¿Qué cambia cuando una fuente se lee desde las categorías vistas?',
     '¿Qué sesgo te resultó más difícil reconocer en tu propia formación?',
     '¿Qué historia matemática querrías llevar a una futura clase?'
   ];
