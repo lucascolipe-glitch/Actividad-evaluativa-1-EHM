@@ -391,13 +391,20 @@
       </p>
       <h2 id="titulo-pausa">Escuchar también es cambiar el ritmo</h2></div>
     <div class="pausa-card">
-      <audio controls preload="metadata"><source src="assets/audio/pausa-reflexiva.mp3" type="audio/mpeg">
-        Tu navegador no puede reproducir el audio.</audio>
-      <!-- 
-      <p class="nota-media">
-        Colocá una pieza autorizada en <code>assets/audio/pausa-reflexiva.mp3</code>. Esta elección queda abierta porque los materiales no definen una obra musical específica.
-    </p>
-      -->
+      <div class="reproductor-musical">
+        <div class="video-responsive">
+          <iframe
+            id="video-pausa"
+            src="https://www.youtube-nocookie.com/embed/hHyLtkAdT0A?rel=0"
+            title="Pausa musical · Tema instrumental 1 de 9"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p id="estado-musica" class="nota-media" aria-live="polite">Tema instrumental 1 de 9</p>
+        <button id="cambiar-musica" class="secundario" type="button">Cambiar música</button>
+      </div>
       <blockquote id="pregunta-pausa">
         ¿Qué nombres aparecen primero cuando pensás en la historia de la matemática?
       </blockquote>

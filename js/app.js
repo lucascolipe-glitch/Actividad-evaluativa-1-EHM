@@ -145,6 +145,30 @@
     salida.textContent = `Problema: ${valores[0]}\n\nA partir de la lectura: ${valores[1]}\n\nPuede observarse en: ${valores[2]}\n\nEsto resulta relevante para la formación y la enseñanza porque: ${valores[3]}`;
   });
 
+  /* PAUSA MUSICAL */
+  const videosPausa = [
+    'hHyLtkAdT0A',
+    'mY2BuhUbV_I',
+    'ErfaTN2TZ_U',
+    'IPjVQz64CjA',
+    '4oVllgsSVjw',
+    'cHr8DTNRZdg',
+    'Wew0Q_rxQCo',
+    'tq0-bdSINmY',
+    'Ja9BPjGOZtU'
+  ];
+  let indiceMusica = 0;
+  const videoPausa = document.getElementById('video-pausa');
+  const estadoMusica = document.getElementById('estado-musica');
+
+  document.getElementById('cambiar-musica')?.addEventListener('click', () => {
+    indiceMusica = (indiceMusica + 1) % videosPausa.length;
+    const numeroTema = indiceMusica + 1;
+    videoPausa.src = `https://www.youtube-nocookie.com/embed/${videosPausa[indiceMusica]}?rel=0&autoplay=1`;
+    videoPausa.title = `Pausa musical · Tema instrumental ${numeroTema} de ${videosPausa.length}`;
+    estadoMusica.textContent = `Tema instrumental ${numeroTema} de ${videosPausa.length}`;
+  });
+
   /* PAUSA REFLEXIVA */
   const preguntas = [
     '¿Qué nombres aparecen primero cuando pensás en la historia de la matemática?',
