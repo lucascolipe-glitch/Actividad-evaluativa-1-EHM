@@ -16,8 +16,10 @@
     <button type="button" data-ir="actividad">Actividad interactiva</button>
     <button type="button" data-ir="bitacora"> Bitácora</button>
     <button type="button" data-ir="pausa">Pausa Musical</button>
+    <button type="button" data-ir="cierre">Mi cierre</button>
     <button type="button" data-ir="fuentes">Fuentes</button>
   </nav>
+  <p id="estado-autoguardado" class="estado-autoguardado" role="status" aria-live="polite">Guardado automático activo</p>
 </header>
 <main id="contenido">
   
@@ -162,7 +164,27 @@
           <table>
             <thead>
               <tr><th>Pregunta</th><th>Díaz y Heler</th><th>Bunge</th><th>Klimovsky / Boido</th></tr>
-            </thead><tbody><tr><th>¿Qué se considera ciencia?</th><td contenteditable="true" aria-label="Notas sobre Díaz y Heler"></td><td contenteditable="true" aria-label="Notas sobre Bunge"></td><td contenteditable="true" aria-label="Notas sobre Klimovsky y Boido"></td></tr><tr><th>¿Cómo se valida?</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr><tr><th>¿Qué problema deja abierto?</th><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr></tbody>
+            </thead>
+            <tbody>
+              <tr>
+                <th>¿Qué se considera ciencia?</th>
+                <td id="matriz-ciencia-diaz" contenteditable="true" aria-label="Qué se considera ciencia según Díaz y Heler"></td>
+                <td id="matriz-ciencia-bunge" contenteditable="true" aria-label="Qué se considera ciencia según Bunge"></td>
+                <td id="matriz-ciencia-klimovsky" contenteditable="true" aria-label="Qué se considera ciencia según Klimovsky y Boido"></td>
+              </tr>
+              <tr>
+                <th>¿Cómo se valida?</th>
+                <td id="matriz-validacion-diaz" contenteditable="true" aria-label="Cómo se valida según Díaz y Heler"></td>
+                <td id="matriz-validacion-bunge" contenteditable="true" aria-label="Cómo se valida según Bunge"></td>
+                <td id="matriz-validacion-klimovsky" contenteditable="true" aria-label="Cómo se valida según Klimovsky y Boido"></td>
+              </tr>
+              <tr>
+                <th>¿Qué problema deja abierto?</th>
+                <td id="matriz-problema-diaz" contenteditable="true" aria-label="Problema abierto en Díaz y Heler"></td>
+                <td id="matriz-problema-bunge" contenteditable="true" aria-label="Problema abierto en Bunge"></td>
+                <td id="matriz-problema-klimovsky" contenteditable="true" aria-label="Problema abierto en Klimovsky y Boido"></td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <p class="microconsigna">No busques que todos digan lo mismo: registrá diferencias, énfasis y preguntas.</p>
@@ -177,7 +199,7 @@
         </p>
         <a class="enlace" href="https://youtu.be/GzrmOLSza0Q" target="_blank" rel="noopener">
           Abrir video en YouTube</a></div><div class="video-responsive">
-            <iframe src="https://www.youtube-nocookie.com/embed/GzrmOLSza0Q" title="Concepción heredada y concepción crítica según Esther Díaz" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe src="https://www.youtube-nocookie.com/embed/GzrmOLSza0Q?enablejsapi=1" title="Concepción heredada y concepción crítica según Esther Díaz" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               
             </iframe>
           </div>
@@ -193,7 +215,7 @@
         </p>
         <a class="enlace" href="https://youtu.be/dHjOJLnEY5A" target="_blank" rel="noopener">
           Abrir video en YouTube</a></div><div class="video-responsive">
-            <iframe src="https://www.youtube-nocookie.com/embed/dHjOJLnEY5A" title="La ciencia, su método y su filosofía de Mario Bunge" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe src="https://www.youtube-nocookie.com/embed/dHjOJLnEY5A?enablejsapi=1" title="La ciencia, su método y su filosofía de Mario Bunge" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               
             </iframe>
           </div>
@@ -213,7 +235,7 @@
         </p>
         <a class="enlace" href="https://youtu.be/L-nZIrC5HME" target="_blank" rel="noopener">
           Abrir video en YouTube</a></div><div class="video-responsive">
-            <iframe src="https://www.youtube-nocookie.com/embed/L-nZIrC5HME" title="Logicismo vs Intuicionismo vs Formalismo vs Realismo|Filosofía de las matemáticas." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe src="https://www.youtube-nocookie.com/embed/L-nZIrC5HME?enablejsapi=1" title="Logicismo vs Intuicionismo vs Formalismo vs Realismo|Filosofía de las matemáticas." loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               
             </iframe>
           </div>
@@ -232,7 +254,7 @@
         </p>
         <a class="enlace" href="https://youtu.be/KcYnsAfCCcg" target="_blank" rel="noopener">
           Abrir video en YouTube</a></div><div class="video-responsive">
-            <iframe src="https://www.youtube-nocookie.com/embed/KcYnsAfCCcg" title="IPC. Clase KLIMOVSKY| El concepto de Ciencia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe src="https://www.youtube-nocookie.com/embed/KcYnsAfCCcg?enablejsapi=1" title="IPC. Clase KLIMOVSKY| El concepto de Ciencia" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               
             </iframe>
           </div>
@@ -257,7 +279,7 @@
   <section id="nodo2" class="pantalla nodo-seccion" data-obligatorio="true" aria-labelledby="titulo-nodo2">
     <div class="encabezado-seccion"><p class="ceja">Nodo 2 · Sección 2 de la actividad</p><h2 id="titulo-nodo2">Más allá del “gran hombre”</h2><p class="pregunta">¿Qué desaparece cuando la historia de la ciencia se cuenta como una cadena de genialidades individuales?</p></div>
     <div class="cita-comentada"><blockquote>“Ningún gran hombre se basta a sí mismo en ningún terreno cultural, y mucho menos en la ciencia.”</blockquote><p><strong>Cita textual de J. D. Bernal</strong>, reproducida en la consigna. La lectura propone desplazar la mirada desde el individuo aislado hacia condiciones sociales, instituciones, trabajos previos y cooperación.</p></div>
-    <div class="video-bloque"><div><span class="etiqueta">Video + análisis</span><h3>El mito en la historia y en el presente</h3><ol><li>Anotá qué rasgos construyen la figura del héroe.</li><li>Identificá qué actores colectivos quedan en segundo plano.</li><li>Relacioná un ejemplo con tu propia trayectoria escolar.</li></ol><a class="enlace" href="https://youtu.be/vltMqE4LNIs" target="_blank" rel="noopener">Abrir video en YouTube</a></div><div class="video-responsive"><iframe src="https://www.youtube-nocookie.com/embed/vltMqE4LNIs" title="Video sobre el mito de los grandes hombres" loading="lazy" allowfullscreen></iframe></div></div>
+    <div class="video-bloque"><div><span class="etiqueta">Video + análisis</span><h3>El mito en la historia y en el presente</h3><ol><li>Anotá qué rasgos construyen la figura del héroe.</li><li>Identificá qué actores colectivos quedan en segundo plano.</li><li>Relacioná un ejemplo con tu propia trayectoria escolar.</li></ol><a class="enlace" href="https://youtu.be/vltMqE4LNIs" target="_blank" rel="noopener">Abrir video en YouTube</a></div><div class="video-responsive"><iframe src="https://www.youtube-nocookie.com/embed/vltMqE4LNIs?enablejsapi=1" title="Video sobre el mito de los grandes hombres" loading="lazy" allowfullscreen></iframe></div></div>
     <div class="comparador"><h3>Reencuadrar una narración</h3><div class="comparador-grid"><article><h4>Relato heroico</h4><p>“Una persona excepcional descubre una verdad gracias a su genialidad.”</p></article><div class="flecha" aria-hidden="true">→</div><article><h4>Relato situado</h4><p>Preguntá por problemas disponibles, saberes previos, colaboradores, instituciones, instrumentos, conflictos y condiciones materiales.</p></article></div><label for="reescritura">Reescribí un episodio matemático que recuerdes de la escuela:</label><textarea id="reescritura" rows="5" placeholder="De la biografía individual a una trama histórica y colectiva..."></textarea></div>
     <aside class="producto"><strong>Producto de esta etapa:</strong> llevar a la discusión colectiva cómo apareció este mito en la propia formación y por qué conviene problematizarlo.</aside>
     <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="nodo3">Continuar a la etapa 3</button></div>
@@ -323,7 +345,7 @@
         <a class="enlace" href="https://youtu.be/7KGP86Dx1Eo" target="_blank" rel="noopener">Abrir video en YouTube</a>
       </div>
       <div class="video-responsive">
-        <iframe src="https://www.youtube-nocookie.com/embed/7KGP86Dx1Eo" title="Eurocentrismo en la historiografía de la matemática" loading="lazy" allowfullscreen>
+        <iframe src="https://www.youtube-nocookie.com/embed/7KGP86Dx1Eo?enablejsapi=1" title="Eurocentrismo en la historiografía de la matemática" loading="lazy" allowfullscreen>
           
         </iframe>
       </div>
@@ -358,10 +380,10 @@
     </div>
     <div class="criterios">
       <h3>Revisión antes de entregar</h3>
-      <label><input type="checkbox"> Distingo mis palabras de las citas textuales.</label>
-      <label><input type="checkbox"> No uso el recurso multimedia como sustituto de la lectura.</label>
-      <label><input type="checkbox"> Explico cómo opera el sesgo, no solo lo nombro.</label>
-      <label><input type="checkbox"> Incluyo una consecuencia epistemológica o educativa.</label>
+      <label><input id="revision-citas" type="checkbox"> Distingo mis palabras de las citas textuales.</label>
+      <label><input id="revision-multimedia" type="checkbox"> No uso el recurso multimedia como sustituto de la lectura.</label>
+      <label><input id="revision-sesgo" type="checkbox"> Explico cómo opera el sesgo, no solo lo nombro.</label>
+      <label><input id="revision-consecuencia" type="checkbox"> Incluyo una consecuencia epistemológica o educativa.</label>
     </div>
     <div class="acciones">
       <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
@@ -377,10 +399,10 @@
 
   <!-- BITÁCORA -->
   <section id="bitacora" class="pantalla" aria-labelledby="titulo-bitacora">
-    <div class="encabezado-seccion"><p class="ceja">Bitácora personal</p><h2 id="titulo-bitacora">Una pregunta que me llevo</h2><p>Estas notas se guardan solamente en este navegador y en este dispositivo.</p></div>
+    <div class="encabezado-seccion"><p class="ceja">Bitácora personal</p><h2 id="titulo-bitacora">Una pregunta que me llevo</h2><p>Tus respuestas se guardan automáticamente en este navegador y en este dispositivo.</p></div>
     <label for="nota-bitacora">¿Qué idea de ciencia o de historia matemática empezaste a revisar?</label><textarea id="nota-bitacora" rows="8" placeholder="Escribí una reflexión, una duda o una posible relación con tu futura práctica docente..."></textarea>
     <p id="estado-guardado" role="status"></p>
-    <div class="acciones"><button id="guardar-bitacora" class="primario" type="button">Guardar en este dispositivo</button><button id="borrar-bitacora" class="secundario" type="button">Borrar bitácora</button><button class="secundario" type="button" data-ir="pausa">Pausa reflexiva</button></div>
+    <div class="acciones"><button id="guardar-bitacora" class="primario" type="button">Guardar ahora</button><button id="borrar-bitacora" class="secundario" type="button">Borrar bitácora</button><button class="secundario" type="button" data-ir="pausa">Pausa reflexiva</button><button class="primario" type="button" data-ir="cierre">Ir al panel final</button></div>
   </section>
 
   <!-- PAUSA MUSICAL -->
@@ -391,26 +413,103 @@
       </p>
       <h2 id="titulo-pausa">Escuchar también es cambiar el ritmo</h2></div>
     <div class="pausa-card">
-      <div class="reproductor-musical">
-        <div class="video-responsive">
-          <iframe
-            id="video-pausa"
-            src="https://www.youtube-nocookie.com/embed/hHyLtkAdT0A?rel=0"
-            title="Pausa musical · Tema instrumental 1 de 9"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+      <div class="reproductor-musical reproductor-compacto">
+        <div class="cabecera-reproductor">
+          <div>
+            <span class="etiqueta">Música opcional</span>
+            <p class="nota-media">Comienza en pausa, con volumen bajo, y recuerda tu elección en este dispositivo.</p>
+          </div>
+          <button id="musica-reproducir" class="primario boton-reproduccion" type="button" aria-label="Reproducir o pausar">▶ Reproducir</button>
         </div>
-        <p id="estado-musica" class="nota-media" aria-live="polite">Tema instrumental 1 de 9</p>
-        <button id="cambiar-musica" class="secundario" type="button">Cambiar música</button>
+        <div class="info-musica">
+          <p id="estado-musica" class="nota-media" aria-live="polite">Tema instrumental 1 de 9</p>
+          <p id="tiempo-musica" class="tiempo-musica" aria-live="off">0:00</p>
+        </div>
+        <div class="controles-musica controles-principales" aria-label="Controles de la pausa musical">
+          <button id="musica-anterior" class="secundario" type="button" aria-label="Tema anterior">⏮ Anterior</button>
+          <button id="musica-siguiente" class="secundario" type="button" aria-label="Tema siguiente">Siguiente ⏭</button>
+          <button id="musica-aleatoria" class="secundario" type="button" aria-label="Elegir otro tema al azar">🔀 Aleatorio</button>
+        </div>
+        <div class="control-volumen">
+          <button id="musica-silencio" class="secundario boton-silencio" type="button" aria-label="Silenciar música">🔊 Sonido</button>
+          <label for="musica-volumen">Volumen
+            <input id="musica-volumen" type="range" min="0" max="100" step="5" value="35">
+          </label>
+          <output id="musica-volumen-valor" for="musica-volumen">35%</output>
+        </div>
+        <details class="visualizador-musica">
+          <summary>Mostrar u ocultar el video del tema</summary>
+          <div class="video-responsive">
+            <iframe
+              id="video-pausa"
+              src="https://www.youtube-nocookie.com/embed/hHyLtkAdT0A?rel=0&enablejsapi=1"
+              title="Pausa musical · Tema instrumental 1 de 9"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </details>
       </div>
       <blockquote id="pregunta-pausa">
         ¿Qué nombres aparecen primero cuando pensás en la historia de la matemática?
       </blockquote>
       <button id="otra-pregunta" class="primario" type="button">Otra pregunta</button>
     </div>
-    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="fuentes">Consultar fuentes</button></div>
+    <div class="acciones"><button class="secundario" type="button" data-ir="mapa">Volver al mapa</button><button class="primario" type="button" data-ir="cierre">Ver mi cierre</button></div>
+  </section>
+
+  <!-- PANEL FINAL -->
+  <section id="cierre" class="pantalla" aria-labelledby="titulo-cierre">
+    <div class="encabezado-seccion">
+      <p class="ceja">Panel final del estudiante</p>
+      <h2 id="titulo-cierre">Revisar, imprimir y guardar</h2>
+      <p>Completá tus datos, revisá lo pendiente y generá una versión ordenada de todo lo trabajado.</p>
+    </div>
+
+    <div class="datos-estudiante">
+      <label for="estudiante-nombre">Nombre y apellido
+        <input id="estudiante-nombre" type="text" autocomplete="name" placeholder="Escribí tu nombre completo">
+      </label>
+      <label for="estudiante-curso">Curso o comisión
+        <input id="estudiante-curso" type="text" placeholder="Por ejemplo: Profesorado en Matemática">
+      </label>
+    </div>
+
+    <div class="resumen-final" aria-live="polite">
+      <article><span id="final-porcentaje">0%</span><strong>avance general</strong></article>
+      <article><span id="final-nodos">0/3</span><strong>nodos obligatorios</strong></article>
+      <article><span id="final-respuestas">0/15</span><strong>campos escritos</strong></article>
+      <article><span id="final-casos">0/3</span><strong>casos interactivos</strong></article>
+    </div>
+
+    <div class="barra-avance-final" aria-label="Avance general">
+      <span id="barra-avance-relleno"></span>
+    </div>
+
+    <div class="panel-pendientes">
+      <div>
+        <h3>Antes de entregar</h3>
+        <ul id="lista-pendientes"></ul>
+      </div>
+      <div>
+        <h3>Vista previa</h3>
+        <div id="vista-respuestas" class="vista-respuestas"></div>
+      </div>
+    </div>
+
+    <p id="estado-panel-final" class="nota" role="status" aria-live="polite"></p>
+    <div class="acciones acciones-entrega">
+      <button id="revisar-pendientes" class="secundario" type="button">Revisar lo pendiente</button>
+      <button id="imprimir-actividad" class="primario" type="button">🖨 Imprimir actividad completa</button>
+      <button id="exportar-pdf" class="primario" type="button">📄 Guardar como PDF</button>
+      <button id="borrar-respuestas" class="secundario boton-peligro" type="button">Borrar mis respuestas</button>
+    </div>
+    <p class="nota">Para crear el PDF, se abre la ventana de impresión del navegador. Elegí <strong>Guardar como PDF</strong> como destino.</p>
+    <div class="acciones">
+      <button class="secundario" type="button" data-ir="mapa">Volver al mapa</button>
+      <button class="secundario" type="button" data-ir="fuentes">Consultar fuentes</button>
+    </div>
   </section>
 
   <!-- FUENTES -->
@@ -457,6 +556,7 @@
     </div>
   </section>
 </main>
+<section id="informe-impresion" class="informe-impresion" aria-hidden="true"></section>
 <footer><p>Cápsula educativa · Epistemología e Historia de la Matemática · UNCo</p></footer>
 <noscript><p class="noscript">Esta cápsula necesita JavaScript para la navegación y la actividad interactiva.</p></noscript>
 <script src="js/app.js"></script>

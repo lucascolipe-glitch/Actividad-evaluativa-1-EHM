@@ -19,3 +19,83 @@ main{width:var(--ancho);margin:2rem auto 4rem}.pantalla{display:none;animation:e
 @media (max-width:900px){.hero.activa,.dos-columnas,.recurso-grid,.video-bloque{grid-template-columns:1fr}.tarjetas-lectura,.autores-grid,.pasos,.fuentes-grid{grid-template-columns:1fr 1fr}.hero{min-height:auto}.barra{align-items:flex-start;flex-direction:column}.comparador-grid{grid-template-columns:1fr}.flecha{transform:rotate(90deg);justify-self:center}}
 @media (max-width:620px){main{width:min(94vw,1180px);margin-top:1rem}.pantalla:not(.hero){padding:1rem}.mapa-grid,.tarjetas-lectura,.autores-grid,.pasos,.fuentes-grid,.argumento-grid{grid-template-columns:1fr}.barra nav{width:100%}.barra button{flex:1}.hero.activa{display:flex;flex-direction:column}.hero figure{order:-1}.acciones>*{width:100%}.nodo{padding:1rem}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* REPRODUCTOR DE LA PAUSA MUSICAL */
+.info-musica{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:.65rem 0}.info-musica .nota-media{margin:0}.tiempo-musica{margin:0;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:750}.controles-musica{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center}.controles-musica button{flex:1 1 145px}.controles-musica button:disabled{opacity:.65;cursor:wait}@media (max-width:560px){.info-musica{align-items:flex-start;flex-direction:column;gap:.2rem}.controles-musica{display:grid;grid-template-columns:1fr 1fr;width:100%}.controles-musica button{width:100%}}
+
+
+/* GUARDADO AUTOMÁTICO */
+.estado-autoguardado{margin:0 0 0 auto;padding:.38rem .7rem;border:1px solid var(--borde);border-radius:999px;color:var(--muted);background:#f8fbff;font-size:.78rem;white-space:nowrap;transition:.2s ease}
+.estado-autoguardado.guardado-reciente{background:#ecfdf3;border-color:#86d3a4;color:#166534}
+td[contenteditable="true"]:focus{outline:3px solid rgba(29,78,216,.2);outline-offset:-3px;background:#f8fbff}
+
+/* REPRODUCTOR MUSICAL COMPACTO */
+.reproductor-compacto{display:grid;gap:.8rem;padding:1rem;border:1px solid var(--borde);border-radius:18px;background:#fff}
+.cabecera-reproductor{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.cabecera-reproductor .etiqueta{margin-bottom:.25rem}
+.cabecera-reproductor .nota-media{margin:0}
+.boton-reproduccion{flex:0 0 auto;min-width:145px}
+.controles-principales button{flex:1 1 130px}
+.control-volumen{display:grid;grid-template-columns:auto minmax(150px,1fr) auto;align-items:center;gap:.75rem;padding:.7rem .8rem;border-radius:14px;background:var(--azul-claro)}
+.control-volumen label{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.75rem;color:var(--azul-oscuro);font-weight:750}
+.control-volumen input[type="range"]{width:100%;accent-color:var(--azul)}
+.control-volumen output{min-width:3.2rem;text-align:right;font-variant-numeric:tabular-nums;font-weight:800;color:var(--azul-oscuro)}
+.boton-silencio{padding:.52rem .8rem;white-space:nowrap}
+.visualizador-musica{border-top:1px solid var(--borde);padding-top:.7rem}
+.visualizador-musica summary{cursor:pointer;color:var(--azul-oscuro);font-weight:750}
+.visualizador-musica .video-responsive{margin-top:.8rem;max-width:620px}
+
+/* PANEL FINAL */
+.datos-estudiante{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-bottom:1.2rem}
+.datos-estudiante label{display:grid;gap:.35rem;font-weight:800;color:var(--azul-oscuro)}
+.datos-estudiante input{width:100%;padding:.78rem .9rem;border:1px solid #bcc9db;border-radius:12px;background:#fff}
+.resumen-final{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+.resumen-final article{display:grid;gap:.2rem;padding:1rem;border:1px solid var(--borde);border-radius:16px;background:#f8fbff;text-align:center}
+.resumen-final span{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;line-height:1;color:var(--azul)}
+.resumen-final strong{font-size:.85rem;color:var(--muted)}
+.barra-avance-final{height:13px;margin:1rem 0 1.4rem;background:#e7edf7;border-radius:999px;overflow:hidden}
+.barra-avance-final span{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--azul),#4f83ff);border-radius:inherit;transition:width .35s ease}
+.panel-pendientes{display:grid;grid-template-columns:.85fr 1.15fr;gap:1rem}
+.panel-pendientes>div{padding:1.2rem;border:1px solid var(--borde);border-radius:var(--radio);background:#fff}
+#lista-pendientes{padding-left:1.3rem}
+#lista-pendientes li{margin:.42rem 0}
+#lista-pendientes .completo{color:#166534;font-weight:800}
+.vista-respuestas{display:grid;gap:.7rem}
+.vista-respuestas article{padding:.8rem;border-radius:12px;background:#f8fbff}
+.vista-respuestas p{margin:.3rem 0 0;white-space:pre-wrap;color:#344258}
+.acciones-entrega{padding:1rem;border-radius:16px;background:var(--azul-claro)}
+.boton-peligro{border-color:#b42318;color:#b42318}
+.boton-peligro:hover,.boton-peligro:focus-visible{background:#fff0ee}
+.caso-opciones .opcion-elegida{border-color:var(--azul);background:var(--azul-claro);box-shadow:inset 0 0 0 2px rgba(29,78,216,.12)}
+
+/* INFORME DE IMPRESIÓN */
+.informe-impresion{display:none;background:#fff;color:#111}
+.informe-impresion h1,.informe-impresion h2,.informe-impresion h3{color:#111}
+.cabecera-informe{text-align:center;border-bottom:2px solid #222;padding-bottom:1rem;margin-bottom:1rem}
+.cabecera-informe h1{font-size:25pt;margin:.25rem 0}
+.cabecera-informe p{margin:.2rem 0}
+.datos-informe{display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1rem;padding:.8rem;border:1px solid #777;margin-bottom:1rem}
+.datos-informe p{margin:0}
+.respuesta-informe{min-height:3rem;padding:.65rem;border:1px solid #aaa;white-space:normal;margin-bottom:.9rem}
+.bloque-informe{break-inside:avoid;border:1px solid #aaa;padding:.7rem;margin:.7rem 0}
+.lista-informe{list-style:none;padding-left:0}
+.pie-informe{margin-top:1.5rem;padding-top:.7rem;border-top:1px solid #777;text-align:center;font-size:9pt}
+
+@media (max-width:1050px){.barra{flex-wrap:wrap}.estado-autoguardado{order:3;margin-left:0}.resumen-final{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.datos-estudiante,.panel-pendientes{grid-template-columns:1fr}.cabecera-reproductor{align-items:stretch;flex-direction:column}.boton-reproduccion{width:100%}.control-volumen{grid-template-columns:1fr auto}.control-volumen label{grid-column:1/-1;grid-row:2}.boton-silencio{justify-self:start}}
+@media (max-width:520px){.resumen-final{grid-template-columns:1fr 1fr}.control-volumen{display:flex;flex-wrap:wrap}.control-volumen label{width:100%;grid-template-columns:1fr}.control-volumen output{margin-left:auto}}
+
+@media print{
+  @page{size:A4;margin:1.5cm}
+  body{background:#fff;color:#111;font-family:Arial,sans-serif;font-size:10.5pt;line-height:1.4}
+  .barra,main,body>footer,.noscript{display:none!important}
+  .informe-impresion{display:block!important;width:100%;margin:0;padding:0}
+  .informe-impresion section{break-inside:auto;margin:0 0 1rem}
+  .informe-impresion h2{font-size:16pt;border-bottom:1px solid #555;padding-bottom:.25rem;margin:1.2rem 0 .65rem}
+  .informe-impresion h3{font-size:12pt;margin:.7rem 0 .3rem}
+  .informe-impresion table{width:100%;min-width:0;border-collapse:collapse;font-size:9pt}
+  .informe-impresion th,.informe-impresion td{border:1px solid #777;padding:.45rem;vertical-align:top}
+  .informe-impresion thead{background:#eee!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .datos-informe{break-inside:avoid}
+  a{color:#111;text-decoration:none}
+}
